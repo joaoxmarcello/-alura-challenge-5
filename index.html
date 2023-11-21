@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Classificação ML</h1>
+    <h1>Classificação ML</h1> <button type="button" onClick="verificarVencedor()">Verificar Vencedor</button>
     <div id="pontuacao">
-        <form id="formulario">
-            <label for="nome">Nome do Jogador:</label>
+        <form class="formulario">
+            <label for="nome">Nick Name:</label>
             <input type="text" id="nome" name="nome" required>
-            <button type="button" onClick="adicionarJogadorTime1()">Adicionar</button>
+            <button type="button" onClick="adicionarJogadorTime1()">Add</button>
         </form>
-        <form id="formulario">
-            <label for="nome">Nome do Jogador:</label>
-            <input type="text" id="nome" name="nome" required>
-            <button type="button" onClick="adicionarJogadorTime2()">Adicionar</button>
+        <form class="formulario">
+            <label for="nome2">Nick Name:</label>
+            <input type="text" id="nome2" name="nome2" required>
+            <button type="button" onClick="adicionarJogadorTime2()">Add</button>
         </form>
         <table id="table1" style="width:50%">
             <thead>
             <tr>
-                <th>Nome</th>
-                <th>Abates</th>
-                <th>Mortes</th>
-                <th>Assistencias</th>
-                <th>Ouro</th>
-                <th colspan="5">Ações</th>
+                <th>Nick</th>
+                <th>Kill</th>
+                <th>Death</th>
+                <th>Assistance</th>
+                <th>Gold</th>
+                <th colspan="5">Actions</th>
             </tr>
             </thead>
             <tbody id="tabelaJogadores1">
@@ -37,23 +37,24 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><button onClick="adicionarVitoriaTime1()">Abates</button></td>
-                <td><button onClick="adicionarEmpateTime1()">Mortes</button></td>
-                <td><button onClick="adicionarDerrotaTime1()">Assistencias</button></td>
-                <td><button onClick="zerarInformacoesTime1()">Zerar</button></td>
-                <td><button onClick="excluirJogadorTime1()">Excluir</button></td>
+                <td><button onClick="adicionarAbateTime1()">Kill</button></td>
+                <td><button onClick="adicionarMorteTime1()">Death</button></td>
+                <td><button onClick="adicionarAssisTime1()">Assistance</button></td>
+                <td><button onClick="zerarInformacoesTime1()">Clean</button></td>
+                <td><button onClick="excluirJogadorTime1()">Delete</button></td>
                 </tr>
             </tbody>
         </table>
+        <div class="barra-vertical"></div>
         <table id="table2" style="width:50%">
             <thead>
             <tr>
-                <th>Nome</th>
-                <th>Abates</th>
-                <th>Mortes</th>
-                <th>Assistencias</th>
-                <th>Ouro</th>
-                <th colspan="5">Ações</th>
+                <th>Nick</th>
+                <th>Kill</th>
+                <th>Death</th>
+                <th>Assistance</th>
+                <th>Gold</th>
+                <th colspan="5">Actions</th>
             </tr>
             </thead>
             <tbody id="tabelaJogadores2">
@@ -63,9 +64,11 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><button onClick="adicionarVitoriaTime2()">Abates</button></td>
-                <td><button onClick="adicionarEmpateTime2()">Mortes</button></td>
-                <td><button onClick="adicionarDerrotaTime2()">Assistencias</button></td>
+                <td><button onClick="adicionarAbateTime2()">Kill</button></td>
+                <td><button onClick="adicionarMorteTime2()">Death</button></td>
+                <td><button onClick="adicionarAssisTime2()">Assistance</button></td>
+                <td><button onClick="CleanInformacoesTime2()">Clean</button></td>
+                <td><button onClick="DeleteJogadorTime2()">Delete</button></td>
                 </tr>
             </tbody>
         </table>

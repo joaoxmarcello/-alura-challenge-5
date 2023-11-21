@@ -43,6 +43,7 @@
   table {
     border: 2px solid white;
     border-collapse: collapse;
+    background-color:#FFFFFF25;
   }
   
   h1 {
@@ -61,11 +62,23 @@
     color: #f6f6f6;
   }
   
-#formulario {
+.formulario {
     color: white;
+    margin-bottom: 20px;
 }
 
 #pontuacao {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.barra-vertical {
+  position: absolute;
+  top: 101px;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background-color: #000;
+}
+#table2 {
+  margin-left: 30px;
 }
